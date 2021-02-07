@@ -31,21 +31,25 @@ body {
     overflow:auto;
 }
 
+#footerSection {
+    max-height:100px;
+    margin-bottom:0;
+    flex: 1;
+}
 
 #aboutContainer {
     justify-content: center;
-    flex: 2 0 auto;
+    flex: 2;
 }
 
 #portfolioContainer {
-    flex:4 0 auto;
+    flex:4;
     justify-content: center;
     align-items: center;
 }
 
 #projectContainer {
     display:flex;
-    flex: 1 1 auto;
     flex-direction:column;
     max-width:1000px;
     padding:1rem;
@@ -60,7 +64,7 @@ body {
     max-height:100px;
     padding:1rem;
     margin-bottom:0;
-    flex: 1 0 auto;
+    flex: 1;
     border-top: solid;
 }
 
@@ -73,7 +77,7 @@ body {
     display:flex;
     margin:2.5rem .75rem 0rem .75rem;
     padding: 1rem;
-    flex: 1 1 auto;
+    flex: 1;
     max-width:500px;
     max-height:350px;
     overflow:auto;
@@ -91,7 +95,7 @@ body {
 
 
 .footerSection{
-    flex:1 1;
+    flex:1;
     max-width:200px;
     font-size:40px;
     display:flex;
@@ -117,6 +121,7 @@ i {
 
    #aboutContainer {
        flex-direction:column;
+       margin-bottom:0rem;
    }
 
    html {
