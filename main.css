@@ -31,12 +31,6 @@ body {
     overflow:auto;
 }
 
-#footerSection {
-    max-height:100px;
-    margin-bottom:0;
-    flex: 1;
-}
-
 #aboutContainer {
     justify-content: center;
     flex: 2;
@@ -82,6 +76,7 @@ body {
     max-height:350px;
     overflow:auto;
     border-radius:20px;
+    text-orientation:upright ;
 }
 
 .projContainerControl {
