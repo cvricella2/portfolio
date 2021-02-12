@@ -133,19 +133,22 @@ i {
        font-size:16px;
    }
 
-   .projContainerControl {
-       font-size: 1.25rem;
-   }
-
-   
     .aboutSection{
         margin:.5rem;
         max-height:200px;
     }
 
+    .projImg{
+        max-height:150px;
+    }
+
+    .projContainerControl{
+        font-size:1.5rem;
+    }
+
   }
   
-@media screen and (orientation: landscape) and (max-width: 700px){
+@media screen and (orientation: landscape) and (max-height: 700px){
 
     #aboutContainer {
         flex-direction:row;
