@@ -14,7 +14,6 @@ body {
   padding: 0;
   /* font-family: 'Share Tech Mono', monospace; */
   font-family: 'VT323', monospace;
-  overflow: hidden;
 }
 
 .theme{
@@ -28,16 +27,16 @@ body {
     width:100%;
     position:absolute;
     flex-direction:column;
-    overflow:auto;
+    overflow-y:scroll;
 }
 
 #aboutContainer {
     justify-content: center;
-    flex: 2;
+    flex-grow: 2;
 }
 
 #portfolioContainer {
-    flex:4;
+    flex-grow:4;
     justify-content: center;
     align-items: center;
 }
@@ -49,6 +48,7 @@ body {
     padding:1rem;
     align-items:center;
     border-radius:20px;
+    flex-grow:4
 }
 
 #footerContainer{
@@ -58,13 +58,14 @@ body {
     max-height:100px;
     padding:1rem;
     margin-bottom:0;
-    flex: 1;
+    flex-grow: 1;
     border-top: solid;
 }
 
 .flexSection{
     margin-bottom:1rem;
     display:flex;
+    flex-shrink:0;
 }
 
 .aboutSection{
@@ -82,6 +83,15 @@ body {
 .projContainerControl {
     margin:.5rem;
     font-size:2rem;
+    flex:2;
+}
+
+#leftControl {
+    text-align:right;
+}
+
+#rightControl {
+    text-align:left;
 }
 
 .projImg {
@@ -130,6 +140,7 @@ i {
    
     .aboutSection{
         margin:.5rem;
+        max-height:200px;
     }
 
   }
